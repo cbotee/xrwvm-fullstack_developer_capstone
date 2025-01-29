@@ -124,3 +124,77 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.page-container {
+    margin: 2rem auto 5rem; /* Center horizontally */
+}
+
+.contact-container{
+    padding-top: 1rem;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: black solid 2px;
+    border-radius: 3rem;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.1); /* Use rgba for better shadow control */  
+}
+
+.contact-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-banner img{
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.contact-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-banner img{
+    width: 60%;
+}
+
+.contact-icon-info-box{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon-box{
+    flex: 1; /* Flex-grow: 1 to distribute space evenly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.contact-info-box{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+}
+
+.contact-label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Add some spacing between label and link */
+}
+
+.contact-link{
+    font-size: 0.85rem;
+}
