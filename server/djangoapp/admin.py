@@ -13,7 +13,3 @@ admin.site.register(CarModel)
 # CarModelAdmin class
 
 # CarMakeAdmin class with CarModelInline
-
-# Register models here
-admin.site.register(CarMake)
-admin.site.register(CarModel)
