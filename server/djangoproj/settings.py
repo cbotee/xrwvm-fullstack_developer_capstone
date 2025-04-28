@@ -28,12 +28,12 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS= [
+ALLOWED_HOSTS = [
     'localhost',
     'https://slavik118-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01 \
     .proxy.cognitiveclass.ai'
     ]
-CSRF_TRUSTED_ORIGINS= [
+CSRF_TRUSTED_ORIGINS = [
     'https://slavik118-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01 \
     .proxy.cognitiveclass.ai'
     ]

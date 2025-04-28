@@ -73,7 +73,6 @@ def registration(request):
     last_name = data['lastName']
     email = data['email']
     username_exist = False
-    email_exist = False
     try:
         # Check if user already exists
         User.objects.get(username=username)
@@ -132,9 +131,9 @@ def registration(request):
     else:
         data = {"userName": username, "error": "Already Registered"}
         return JsonResponse(data)
-    
-# # Update the `get_dealerships` view to render the index page with
-# a list of dealerships
+
+  
+# Update the `get_dealerships` view to render the index page with
 def get_dealerships(request, state="All"):
     if (state == "All"):
         endpoint = "/fetchDealers"
@@ -171,6 +170,7 @@ def get_dealer_details(request, dealer_id):
         return JsonResponse({"status": 200, "dealer": dealership})
     else:
         return JsonResponse({"status": 400, "message": "Bad Request"})
+
 
 def add_review(request):
     if (request.user.is_anonymous is False):
